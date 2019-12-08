@@ -1,9 +1,9 @@
-//Вводим необходимые библиотеки
+//Р’РІРѕРґРёРј РЅРµРѕР±С…РѕРґРёРјС‹Рµ Р±РёР±Р»РёРѕС‚РµРєРё
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Objects;
 
-//начинаем класс Действия, описывающего операции, совершаемые при нажатии на кнопки
+//РЅР°С‡РёРЅР°РµРј РєР»Р°СЃСЃ Р”РµР№СЃС‚РІРёСЏ, РѕРїРёСЃС‹РІР°СЋС‰РµРіРѕ РѕРїРµСЂР°С†РёРё, СЃРѕРІРµСЂС€Р°РµРјС‹Рµ РїСЂРё РЅР°Р¶Р°С‚РёРё РЅР° РєРЅРѕРїРєРё
 public class Actions {
     //numbers
     static ActionListener newNumAction(String num) {
@@ -43,12 +43,12 @@ public class Actions {
                 Calculate.upperText.setText(Calculate.first+" "+symbol);
             }
         };
-    } //при нажатии на кнопки с цифрами они будут введены в строку ввода
+    } //РїСЂРё РЅР°Р¶Р°С‚РёРё РЅР° РєРЅРѕРїРєРё СЃ С†РёС„СЂР°РјРё РѕРЅРё Р±СѓРґСѓС‚ РІРІРµРґРµРЅС‹ РІ СЃС‚СЂРѕРєСѓ РІРІРѕРґР°
     static ActionListener[] actions={
             newNumAction("7"),
             newNumAction("8"),
             newNumAction("9"),
-            //действие для кнопки * (операция умножение - Multiply)
+            //РґРµР№СЃС‚РІРёРµ РґР»СЏ РєРЅРѕРїРєРё * (РѕРїРµСЂР°С†РёСЏ СѓРјРЅРѕР¶РµРЅРёРµ - Multiply)
             newSimpleAction(Action.Mul,"*"),
 //del 
             new ActionListener(){
@@ -62,9 +62,9 @@ public class Actions {
             newNumAction("4"),
             newNumAction("5"),
             newNumAction("6"),
-            //описание действия на кнопку / (операция деления - divide)
+            //РѕРїРёСЃР°РЅРёРµ РґРµР№СЃС‚РІРёСЏ РЅР° РєРЅРѕРїРєСѓ / (РѕРїРµСЂР°С†РёСЏ РґРµР»РµРЅРёСЏ - divide)
             newSimpleAction(Action.Div,"/"),
-//описание операции при нажатии на кнопку = (равенство)
+//РѕРїРёСЃР°РЅРёРµ РѕРїРµСЂР°С†РёРё РїСЂРё РЅР°Р¶Р°С‚РёРё РЅР° РєРЅРѕРїРєСѓ = (СЂР°РІРµРЅСЃС‚РІРѕ)
             new ActionListener(){
                 public void actionPerformed(ActionEvent e){
                     String old = Calculate.Text.getText();
@@ -80,8 +80,8 @@ public class Actions {
             newNumAction("2"),
             newNumAction("3"),
             newSimpleAction(Action.Add,"+"),
-//Расчет имт для женщин
-            newSimpleAction(Action.IMT,"ИМТ-Ж"),
+//Р Р°СЃС‡РµС‚ РёРјС‚ РґР»СЏ Р¶РµРЅС‰РёРЅ
+            newSimpleAction(Action.IMT,"Г€ГЊГ’-Г†"),
 //0 
             new ActionListener(){
                 public void actionPerformed(ActionEvent e){
@@ -91,7 +91,7 @@ public class Actions {
                     }
                 }
             },
-//действие для кнопки . (разделение целой и дробной части)
+//РґРµР№СЃС‚РІРёРµ РґР»СЏ РєРЅРѕРїРєРё . (СЂР°Р·РґРµР»РµРЅРёРµ С†РµР»РѕР№ Рё РґСЂРѕР±РЅРѕР№ С‡Р°СЃС‚Рё)
             new ActionListener(){
                 public void actionPerformed(ActionEvent e){
                     String old = Calculate.Text.getText();
@@ -101,7 +101,7 @@ public class Actions {
                     }
                 }
             },
-//действие для кнопки -/+ (смена знака)
+//РґРµР№СЃС‚РІРёРµ РґР»СЏ РєРЅРѕРїРєРё -/+ (СЃРјРµРЅР° Р·РЅР°РєР°)
             new ActionListener(){
                 public void actionPerformed(ActionEvent e){
                     String old= Calculate.Text.getText();
@@ -116,8 +116,8 @@ public class Actions {
                 }
             },
             newSimpleAction(Action.Sub,"-"),
-//расчет логарифма имт для мужчин
-            newSimpleAction(Action.IMT,"ИМТ-М"),
+//СЂР°СЃС‡РµС‚ Р»РѕРіР°СЂРёС„РјР° РёРјС‚ РґР»СЏ РјСѓР¶С‡РёРЅ
+            newSimpleAction(Action.IMT,"Г€ГЊГ’-ГЊ"),
             }
     ;
 }
