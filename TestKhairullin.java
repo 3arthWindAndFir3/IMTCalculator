@@ -12,8 +12,8 @@ public class TestKhairullin extends Calculate{
 	public void test() {
 		Calculate w = new Calculate();
 	      w.timeThread.start();
-		first=118;
-		second=187;
+		first=49;
+		second=169;
 		double num=first/(second*second)*10000;
 		if (first==0) {fail ();}
 		if (second==0) {fail ();}
