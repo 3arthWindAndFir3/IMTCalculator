@@ -3,8 +3,6 @@ package startsev;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import startsev.Calculate;
-import startsev.Actions;
-
 
 public class TestKhairullin extends Calculate{
 
@@ -18,5 +16,6 @@ public class TestKhairullin extends Calculate{
 		if (first==0) {fail ();}
 		if (second==0) {fail ();}
 		if (num<=0) {fail ();}
+		if (num!=17.15626203564301) {fail ();}
 	} 
 }
