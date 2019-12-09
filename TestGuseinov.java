@@ -16,6 +16,6 @@ public class TestGuseinov extends Calculate{
 		if (first==0) {fail ();}
 		if (second==0) {fail ();}
 		if (num<=0) {fail ();}
-		if (num!=17.9012345678901234) {fail ();}
+		if (num!=17.901234567901234) {fail ();}
 	} 
 }
