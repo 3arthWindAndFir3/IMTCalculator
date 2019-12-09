@@ -13,8 +13,8 @@ public class TestGuseinov extends Calculate{
 		first=58;
 		second=180;
 		double num=first/(second*second)*10000;
-		if (first==0) {fail ();}
-		if (second==0) {fail ();}
+		if (first<=0) {fail ();}
+		if (second<=0) {fail ();}
 		if (num<=0) {fail ();}
 		if (num!=17.901234567901234) {fail ();}
 	} 
