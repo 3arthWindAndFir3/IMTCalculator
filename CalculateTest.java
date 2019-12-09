@@ -5,10 +5,7 @@ import org.junit.Test;
 import startsev.Calculate;
 import startsev.Actions;
 
-/**
- * @author homepc
- *
- */
+
 public class CalculateTest extends Calculate{
 
 	@Test
