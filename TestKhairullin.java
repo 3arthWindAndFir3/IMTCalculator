@@ -6,7 +6,7 @@ import startsev.Calculate;
 import startsev.Actions;
 
 
-public class CalculateTest extends Calculate{
+public class TestKhairullin extends Calculate{
 
 	@Test
 	public void test() {
