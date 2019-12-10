@@ -81,7 +81,7 @@ public class Actions {
             newNumAction("3"),
             newSimpleAction(Action.Add,"+"),
 //Расчет имт для женщин
-            newSimpleAction(Action.IMT,"ÈÌÒ-Æ"),
+            newSimpleAction(Action.IMT,"ИМТ-Ж"),
 //0 
             new ActionListener(){
                 public void actionPerformed(ActionEvent e){
@@ -116,8 +116,8 @@ public class Actions {
                 }
             },
             newSimpleAction(Action.Sub,"-"),
-//расчет логарифма имт для мужчин
-            newSimpleAction(Action.IMT,"ÈÌÒ-Ì"),
+//расчет имт для мужчин
+            newSimpleAction(Action.IMT,"ИМТ-М"),
             }
     ;
 }
