@@ -1,8 +1,5 @@
-package startsev;
-
 import static org.junit.Assert.*;
 import org.junit.Test;
-import startsev.Calculate;
 
 public class TestSmolnikov extends Calculate{
 
