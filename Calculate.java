@@ -282,6 +282,7 @@ public class Calculate extends JFrame{
         setSize(620, 300);
         setContentPane(panel);
         setVisible(true);
+        setLocationRelativeTo(null);
         calculatePage();
     }
     public class Background extends Thread{
