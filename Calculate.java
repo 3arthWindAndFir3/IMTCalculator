@@ -278,7 +278,7 @@ public class Calculate extends JFrame{
         //задание кнопок окна
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(null);
-        //размер окна
+        //размер окна, видимость, расположение по середине экрана
         setSize(620, 300);
         setContentPane(panel);
         setVisible(true);
